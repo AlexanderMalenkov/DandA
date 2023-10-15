@@ -1,0 +1,47 @@
+.dividerBlock {
+  padding-top: 36px;
+  padding-bottom: 90px;
+  border-top: 1px solid rgba(30, 30, 30, 0.1);
+}
+
+.mediaWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mediaTextBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 601px;
+}
+
+.mediaImage {
+  width: 517px;
+  height: 601px;
+  position: relative;
+}
+
+.mediaImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Используйте object-fit, чтобы изображение заполнило родительский блок */
+}
+
+.mediaTitle {
+  max-width: 449px;
+  margin-top: 5px;
+}
+
+.mediaText {
+  display: flex;
+  flex-direction: column;
+  gap: 19.6px;
+  max-width: 524px;
+}

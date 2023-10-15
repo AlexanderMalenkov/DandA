@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+
+.title {
+  font-family: "Manrope", sans-serif;
+  color: #1e1e1e;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 120%; /* 36px */
+  letter-spacing: -0.3px;
+}

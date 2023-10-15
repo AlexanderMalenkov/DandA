@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.subtitle {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: -0.18112245202064514px 1.4489796161651611px 3.169642925262451px
+      rgba(0, 0, 0, 0.1),
+    -0.8150510191917419px 5.705357074737549px 5.705357074737549px rgba(0, 0, 0, 0.09),
+    -1.8112244606018066px 12.769131660461426px 7.788265705108643px rgba(0, 0, 0, 0.05),
+    -3.2602040767669678px 22.730867385864258px 9.146683692932129px rgba(0, 0, 0, 0.01),
+    -5.161989688873291px 35.5px 10.052295684814453px rgba(0, 0, 0, 0);
+  font-size: 22.895px;
+  letter-spacing: -0.687px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  position: absolute;
+  bottom: 3vh;
+}

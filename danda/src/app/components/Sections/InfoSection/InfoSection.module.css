@@ -1,0 +1,17 @@
+.sectionWrapper {
+  padding-top: 80px;
+  padding-bottom: 117px;
+}
+
+.titleBlock {
+  margin-bottom: 100px;
+  max-width: 890px;
+}
+
+.cardsBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
