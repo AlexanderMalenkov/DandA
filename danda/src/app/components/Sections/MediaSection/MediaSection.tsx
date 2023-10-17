@@ -14,7 +14,7 @@ const MediaSection = () => {
         <div className={pageStyles.wrapper}>
           <div className={styles.mediaWrapper}>
             <div className={styles.mediaImage}>
-              <Image src={media1} alt="flowers image" layout="responsive" />
+              <Image src={media1} alt="flowers image" layout="responsive"/>
             </div>
             <div className={styles.mediaTextBlock}>
               <div>

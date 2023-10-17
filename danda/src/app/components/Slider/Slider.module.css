@@ -10,3 +10,18 @@
   .sliderItem {
     animation: infinite-slide 4s linear infinite;
   }
+
+  .swiperWrapper {
+    display: flex;
+    padding-bottom: 90px;
+  }
+  
+  .marquee {
+    display: flex;
+  }
+  
+  .gridContainer {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: flex-start;
+  }

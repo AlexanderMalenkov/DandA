@@ -9,10 +9,11 @@ import Slider from "./components/Slider/Slider";
 export default function Home() {
   return (
     <RootLayout>
-      <MainSection />
+      <MainSection/>
       <InfoSection />
       <MediaSection />
       <Slider />
+      <MediaSection />
     </RootLayout>
   );
 }
