@@ -9,8 +9,11 @@ export default function RootLayout({
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <AOSInit />
-      <body>
-        {/* <header>header</header> */}
+      <body
+        style={{
+          overflowX: "hidden",
+        }}
+      >
         {children}
       </body>
     </html>

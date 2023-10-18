@@ -10,10 +10,12 @@ const InfoSection = () => {
       <div className={pageStyles.wrapper}>
         <div className={styles.sectionWrapper}>
           <div className={styles.titleBlock}>
-            <ContentTitle
-              text="Explore our diverse range of flowers, plants, organic produce 
+            <div className={styles.titleWrapper}>
+              <ContentTitle
+                text="Explore our diverse range of flowers, plants, organic produce 
 and floral essentials in a unique and inspiring setting"
-            />
+              />
+            </div>
           </div>
           <div className={styles.cardsBlock}>
             <Card

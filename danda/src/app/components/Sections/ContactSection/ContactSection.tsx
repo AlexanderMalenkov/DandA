@@ -10,10 +10,10 @@ const ContactSection = () => {
           <div className={styles.contactWrapper}>
             <div>
               <h3 className={styles.title}>Contact us</h3>
-              <h6 className={styles.subtitle}>
+              <p className={styles.subtitle}>
                 Please do not hesitate to contact us with any questions or
                 concerns; we are here to assist you
-              </h6>
+              </p>
             </div>
             <div className={styles.contactCardContainer}>
               <div className={styles.contactCardWrapper}>

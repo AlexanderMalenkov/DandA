@@ -15,7 +15,7 @@ const BluredSection = () => {
           <div className={styles.bluredContainer}>
             <div className={styles.titleContainer}>
               <div className={styles.titleBlock}>
-                <ContentSubtitle text="client’s service" color="#FFFFFF" />
+                <ContentSubtitle text="client’s service" color="#FFFFFF" opacity="0.4"/>
                 <ContentTitle
                   color="#FFFFFF"
                   text="Discover our blooms and plants  easily with client’s support"

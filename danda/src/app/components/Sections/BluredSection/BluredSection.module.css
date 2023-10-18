@@ -8,18 +8,27 @@
   padding-bottom: 25px;
 }
 
-.titleBlock{
+.titleBlock {
   max-width: 470px;
 }
 
-.bluredContainer{
+.bluredContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start
+  justify-content: flex-start;
 }
 
-.titleContainer{
+.titleContainer {
   display: flex;
   flex-direction: column;
   gap: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .titleContainer {
+    gap: 64px;
+  }
+  .titleBlock {
+    max-width: 276px;
+  }
 }

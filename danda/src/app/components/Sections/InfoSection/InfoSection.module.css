@@ -12,10 +12,25 @@
   align-items: center;
 }
 
+.titleWrapper {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
 .cardsBlock {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cardsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+  }
 }

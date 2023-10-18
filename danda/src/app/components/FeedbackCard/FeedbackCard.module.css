@@ -50,3 +50,9 @@
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
+
+@media screen and (max-width: 768px) {
+  .feedbackCardWrapper {
+    max-width: 576px;
+  }
+}

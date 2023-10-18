@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./LargeMediaSecton.module.css";
 import pageStyles from "./../../../page.module.css";
-import scrollDown from "./../../../components/Sections/MainSection/Subtitle/Subtitle.module.css";
 import ContentText from "../../ContentText/ContentText";
 import ContentSubtitle from "../../ContentSubtitle/ContentSubtitle";
 import ContentTitle from "../../ContentTitle/ContentTitle";
@@ -13,14 +12,11 @@ const LargeMediaSecton = () => {
       <div className={styles.largeMediaImage} />
       <div className={pageStyles.center}>
         <div className={classNames(pageStyles.wrapper, styles.mediaBlock)}>
-          <ContentSubtitle text="Delicacies" color="rgba(255, 255, 255, 0.40)" />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              marginTop: '5px'
-            }}
-          >
+          <ContentSubtitle
+            text="Delicacies"
+            color="rgba(255, 255, 255, 0.40)"
+          />
+          <div className={styles.mediaContainer}>
             <div>
               <ContentTitle
                 text="We offer various high quality European delicacies, including various alcohol products."
