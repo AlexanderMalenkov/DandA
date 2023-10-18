@@ -6,6 +6,11 @@ import InfoSection from "./components/Sections/InfoSection/InfoSection";
 import MediaSection from "./components/Sections/MediaSection/MediaSection";
 import Slider from "./components/Slider/Slider";
 import LargeMediaSecton from "./components/Sections/LargeMediaSection/LargeMediaSecton";
+import BluredSection from "./components/Sections/BluredSection/BluredSection";
+import FeedbackSection from "./components/Sections/FeedbackSection/FeedbackSection";
+import ContactSection from "./components/Sections/ContactSection/ContactSection";
+import FaqSection from "./components/Sections/FaqSection/FaqSection";
+import Footer from "./components/Sections/Footer/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +23,11 @@ export default function Home() {
       <LargeMediaSecton />
       <Slider />
       <MediaSection />
+      <BluredSection />
+      <FeedbackSection />
+      <ContactSection />
+      <FaqSection />
+      <Footer />
     </RootLayout>
   );
 }

@@ -1,0 +1,43 @@
+.bluredMedia {
+  background-image: url("../../../../../public/img/blur.png");
+  background-size: cover;
+  height: 511px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.dividerBlock {
+    padding-top: 36px;
+    padding-bottom: 90px;
+    border-top: 1px solid rgba(30, 30, 30, 0.1);
+  }
+  
+  .mediaWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .mediaTextBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 250px
+  }
+  
+  .mediaTitle {
+    max-width: 449px;
+    margin-top: 5px;
+  }
+  
+  .mediaText {
+    display: flex;
+    flex-direction: column;
+    gap: 19.6px;
+    max-width: 524px;
+  }
+  

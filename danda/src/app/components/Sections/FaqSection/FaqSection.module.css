@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap");
+
+.faqSectionWrapper {
+  padding-top: 97px;
+  padding-bottom: 126px;
+}
+
+.faqItemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faqContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 80px
+}
+
+.faqTitle {
+  color: #1e1e1e;
+  font-family: "Manrope", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 57.6px */
+  margin-bottom: 24px;
+}
+
+.faqSubtitle {
+  color: #1e1e1e;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
