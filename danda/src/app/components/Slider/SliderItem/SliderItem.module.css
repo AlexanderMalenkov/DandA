@@ -1,3 +1,11 @@
-.sliderItemImage{
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap");
 
+.sliderItemText {
+  color: rgba(30, 30, 30, 0.4);
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  margin-top: 10px;
 }

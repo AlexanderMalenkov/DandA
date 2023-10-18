@@ -99,15 +99,24 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={styles.subfooterBlock}>
-        <div>
-          <p className={styles.subfooterBlock}>
-            © 2023 Relume. All rights reserved.
-          </p>
-        </div>
-        <div>
-          <p className={styles.subfooterBlock}>Privacy Policy</p>
-          <p className={styles.subfooterBlock}>Terms of Service</p>
+      <div className={pageStyles.center}>
+        <div className={pageStyles.wrapper}>
+          <div
+            className={styles.subfooterBlock}
+            style={{
+              marginRight: "-40px",
+            }}
+          >
+            <div>
+              <p className={styles.subfooterText}>
+                © 2023 Relume. All rights reserved.
+              </p>
+            </div>
+            <div className={styles.subFooterTextBlock}>
+              <p className={styles.subfooterText}>Privacy Policy</p>
+              <p className={styles.subfooterText}>Terms of Service</p>
+            </div>
+          </div>
         </div>
       </div>
     </>

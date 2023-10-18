@@ -1,4 +1,6 @@
-export interface TitleProps{
+export interface TitleProps {
     text: string,
-    align?: any
+    align?: any,
+    color?: string,
+    opacity?: string
 }

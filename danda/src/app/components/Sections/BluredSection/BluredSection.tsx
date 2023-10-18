@@ -4,31 +4,43 @@ import pageStyles from "./../../../page.module.css";
 import ContentTitle from "../../ContentTitle/ContentTitle";
 import ContentSubtitle from "../../ContentSubtitle/ContentSubtitle";
 import ContentText from "../../ContentText/ContentText";
+import mediaStyles from "../../Sections/MediaSection/MediaSection.module.css";
+import classNames from "classnames";
 
 const BluredSection = () => {
   return (
     <div className={styles.bluredMedia}>
       <div className={pageStyles.center}>
         <div className={pageStyles.wrapper}>
-          <div className={styles.mediaTextBlock}>
-            <div>
-              <ContentSubtitle text="Flowers & Plants" />
-              <div className={styles.mediaTitle}>
+          <div className={styles.bluredContainer}>
+            <div className={styles.titleContainer}>
+              <div className={styles.titleBlock}>
+                <ContentSubtitle text="client’s service" color="#FFFFFF" />
                 <ContentTitle
-                  text="Sourcing flowers, plants, seeds, and organic produce has never been easier"
+                  color="#FFFFFF"
+                  text="Discover our blooms and plants  easily with client’s support"
                   align="left"
                 />
               </div>
-            </div>
-            <div className={styles.mediaText}>
-              <ContentText
-                text="D&A IMPEX SPÓŁKA is your go-to destination for all things botanical, 
-            from cut flowers and indoor plants to seeds, herbs, and gardening essentials."
-              />
-              <ContentText
-                text="Whether you're a gardening enthusiast or a business owner,
-             we offer global access to a diverse range of botanical products, backed by convenient delivery options."
-              />
+              <div>
+                <div
+                  className={classNames(
+                    mediaStyles.mediaText,
+                    styles.titleBlock
+                  )}
+                >
+                  <ContentText
+                    color="#FFFFFF"
+                    text="Our wide range of services encompasses sourcing, logistics,
+                   compliance, and personal support, making it a one-stop destination for businesses and individuals seeking flowers and plants from across the
+                    globe"
+                  />
+                  <ContentText
+                    color="#FFFFFF"
+                    text="Whether you need small quantities for retail or large-scale importation of botanicals, D&A has you covered."
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -6,35 +6,36 @@ import Image from "next/image";
 import ContentTitle from "../../ContentTitle/ContentTitle";
 import ContentSubtitle from "../../ContentSubtitle/ContentSubtitle";
 import ContentText from "../../ContentText/ContentText";
+import { MediaSectionProps } from "./MediaSection.type";
 
-const MediaSection = () => {
+const MediaSection = ({
+  image,
+  title,
+  subtitle,
+  text1,
+  text2,
+  direction,
+}: MediaSectionProps) => {
   return (
     <div className={styles.dividerBlock}>
       <div className={pageStyles.center}>
         <div className={pageStyles.wrapper}>
-          <div className={styles.mediaWrapper}>
-            <div className={styles.mediaImage}>
-              <Image src={media1} alt="flowers image" layout="responsive"/>
+          <div className={styles.mediaBlockContainer}>
+            <div>
+              <Image
+                src={image}
+                alt="flowers image"
+                className={styles.mediaImage}
+              />
             </div>
-            <div className={styles.mediaTextBlock}>
+            <div className={styles.mediaTextContainer}>
               <div>
-                <ContentSubtitle text="Flowers & Plants" />
-                <div className={styles.mediaTitle}>
-                  <ContentTitle
-                    text="Sourcing flowers, plants, seeds, and organic produce has never been easier"
-                    align="left"
-                  />
-                </div>
+                <ContentSubtitle text={subtitle} opacity="0.4" />
+                <ContentTitle text={title} align="left" />
               </div>
               <div className={styles.mediaText}>
-                <ContentText
-                  text="D&A IMPEX SPÓŁKA is your go-to destination for all things botanical, 
-                from cut flowers and indoor plants to seeds, herbs, and gardening essentials."
-                />
-                <ContentText
-                  text="Whether you're a gardening enthusiast or a business owner,
-                 we offer global access to a diverse range of botanical products, backed by convenient delivery options."
-                />
+                <ContentText text={text1} />
+                <ContentText text={text2} />
               </div>
             </div>
           </div>

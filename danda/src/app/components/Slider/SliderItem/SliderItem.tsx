@@ -1,12 +1,15 @@
 import React from "react";
 import { SliderItemProps } from "./SliderItem.props";
 import Image from "next/image";
+import styles from "./SliderItem.module.css";
 
 const SliderItem = ({ description, width, height, image }: SliderItemProps) => {
   return (
-    <div style={{
-        marginRight: '24px'
-    }}>
+    <div
+      style={{
+        marginRight: "24px",
+      }}
+    >
       <div
         style={{
           width: `${width}px`,
@@ -28,7 +31,7 @@ const SliderItem = ({ description, width, height, image }: SliderItemProps) => {
           }}
         />
       </div>
-      <p>{description}</p>
+      <p className={styles.sliderItemText}>{description}</p>
     </div>
   );
 };

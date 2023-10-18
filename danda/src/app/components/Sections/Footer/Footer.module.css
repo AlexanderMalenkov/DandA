@@ -83,3 +83,9 @@
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
+
+.subFooterTextBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
