@@ -5,6 +5,7 @@ import MainSection from "./components/Sections/MainSection/MainSection";
 import InfoSection from "./components/Sections/InfoSection/InfoSection";
 import MediaSection from "./components/Sections/MediaSection/MediaSection";
 import Slider from "./components/Slider/Slider";
+import LargeMediaSecton from "./components/Sections/LargeMediaSection/LargeMediaSecton";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
       <MainSection/>
       <InfoSection />
       <MediaSection />
+      <Slider />
+      <MediaSection />
+      <LargeMediaSecton />
       <Slider />
       <MediaSection />
     </RootLayout>

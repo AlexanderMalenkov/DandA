@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "./Slider.module.css";
 import Marquee from "react-fast-marquee";
 import SliderItem from "./SliderItem/SliderItem";
