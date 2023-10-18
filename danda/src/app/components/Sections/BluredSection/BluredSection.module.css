@@ -32,3 +32,9 @@
     max-width: 276px;
   }
 }
+
+@media screen and (max-width: 540px) {
+  .titleContainer {
+    gap: 304px;
+  }
+}

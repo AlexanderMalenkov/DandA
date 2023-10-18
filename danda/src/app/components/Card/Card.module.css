@@ -35,3 +35,10 @@
     max-width: 576px;
   }
 }
+
+@media screen and (max-width: 540px) {
+  .cardWrapper{
+    align-items: center;
+    max-width: 400px;
+  }
+}

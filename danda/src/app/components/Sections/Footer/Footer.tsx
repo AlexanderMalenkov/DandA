@@ -14,9 +14,9 @@ const Footer = () => {
         <div className={pageStyles.center}>
           <div className={pageStyles.wrapper}>
             <div className={styles.footerWrapper}>
+              <Logo />
               <div className={styles.footerContainer}>
                 <div>
-                  <Logo />
                   <div className={styles.address}>
                     <h5 className={styles.footerTitle}>Address:</h5>
                     <h6 className={styles.footerSubtitle}>

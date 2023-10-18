@@ -6,8 +6,9 @@ import ContentTitle from "../../ContentTitle/ContentTitle";
 import ContentSubtitle from "../../ContentSubtitle/ContentSubtitle";
 import ContentText from "../../ContentText/ContentText";
 import { MediaSectionProps } from "./MediaSection.type";
+import classNames from "classnames";
 
-const MediaSection = ({
+const MediaSectionReversed = ({
   image,
   title,
   subtitle,
@@ -18,7 +19,7 @@ const MediaSection = ({
     <div className={styles.dividerBlock}>
       <div className={pageStyles.center}>
         <div className={pageStyles.wrapper}>
-          <div className={styles.mediaBlockContainer}>
+          <div className={classNames(styles.mediaBlockContainer, styles.reversed)}>
             <div className={styles.mediaImageContainer}>
               <Image
                 src={image}
@@ -43,4 +44,4 @@ const MediaSection = ({
   );
 };
 
-export default MediaSection;
+export default MediaSectionReversed;

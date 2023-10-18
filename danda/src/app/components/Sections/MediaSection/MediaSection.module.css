@@ -28,12 +28,39 @@
   gap: 19.6px;
 }
 
+.mediaImageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
 @media screen and (max-width: 768px) {
   .mediaImage {
     width: 276px;
     height: 320px;
   }
   .mediaTextContainer {
-   gap: 64px
+    gap: 64px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mediaBlockContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .mediaImage {
+    width: 320px;
+    height: 371px;
+    flex-shrink: 0;
+  }
+  .reversed {
+    flex-direction: column;
   }
 }

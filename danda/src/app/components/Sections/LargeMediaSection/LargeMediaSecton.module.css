@@ -54,10 +54,27 @@
 }
 
 @media screen and (max-width: 768px) {
-  .mediaContainer{
-    gap: 84px
+  .mediaContainer {
+    gap: 84px;
   }
-  .mediaSubtext{
+  .mediaSubtext {
     margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .largeMediaImage {
+    height: 601px;
+  }
+  .mediaContainer {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .mediaSubtext {
+    margin-top: 64px;
+  }
+  .mediaBlock {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
