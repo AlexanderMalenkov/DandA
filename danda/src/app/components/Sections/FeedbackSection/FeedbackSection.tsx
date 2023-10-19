@@ -2,23 +2,72 @@ import React from "react";
 import pageStyles from "./../../../page.module.css";
 import styles from "./FeedbackSection.module.css";
 import FeedbackCard from "../../FeedbackCard/FeedbackCard";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from "swiper";
 
 import avatar1 from "./../../../../../public/img/Avatars/Avatar1.png";
+import avatar2 from "./../../../../../public/img/Avatars/Avatar2.png";
+import avatar3 from "./../../../../../public/img/Avatars/Avatar3.png";
+import classNames from "classnames";
+
+SwiperCore.use([Autoplay]);
 
 const FeedbackSection = () => {
   return (
-    <>
-      <div className={pageStyles.center}>
-        <div className={(pageStyles.wrapper, styles.feedbackWrapper)}>
-          <FeedbackCard
-            image={avatar1}
-            name="Sarah"
-            job="Floral Shop Owner"
-            title="This service has revolutionized my floral business. Their fresh flowers are unmatched in quality, and their organic produce section has expanded my offerings. Thank you!"
-          />
+    <div
+      className={pageStyles.center}
+      style={{
+        boxSizing: "border-box",
+        width: "100%",
+        overflow: "hidden",
+      }}
+    >
+      <div className={pageStyles.wrapper}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            paddingTop: "140px",
+            paddingBottom: "80px",
+          }}
+        >
+          <Swiper
+            loop
+            slidesPerView={1}
+            autoplay={{ delay: 2000 }}
+          >
+            <SwiperSlide className={styles.feedbackCardsContainer}>
+              <FeedbackCard
+                image={avatar1}
+                name="Sarah"
+                job="Floral Shop Owner"
+                title="This service has revolutionized my floral business. Their fresh flowers are unmatched in quality, and their organic produce section has expanded my offerings. Thank you!"
+              />
+            </SwiperSlide>
+            <SwiperSlide className={styles.feedbackCardsContainer}>
+              <FeedbackCard
+                image={avatar2}
+                name="Mark"
+                job="Home garderer"
+                title="This is my gardening haven. Their seeds and seedlings transformed my balcony into a lush garden, and their fresh produce is a culinary delight. I'm hooked."
+              />
+            </SwiperSlide>
+            <SwiperSlide className={styles.feedbackCardsContainer}>
+              <FeedbackCard
+                image={avatar3}
+                name="Maria"
+                job="Floral Shop Owner"
+                title="Fresh organic produce has elevated my restaurant's menu.Their global sourcing and prompt deliveries are a game-changer. Batiisoft is now indispensable to my culinary journey."
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

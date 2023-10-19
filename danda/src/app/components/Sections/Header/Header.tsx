@@ -25,7 +25,7 @@ const Header = () => {
       <div
         style={{
           position: "absolute",
-          top: 22,
+          top: 25,
           right: 42,
         }}
       >

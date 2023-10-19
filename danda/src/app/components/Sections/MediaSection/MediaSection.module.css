@@ -63,11 +63,19 @@
     gap: 32px;
   }
   .mediaImage {
-    width: 320px;
-    height: 371px;
+    width: 300px;
+    height: 341px;
     flex-shrink: 0;
   }
   .reversed {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mediaImage {
+    width: 280px;
+    height: 331px;
+    flex-shrink: 0;
   }
 }

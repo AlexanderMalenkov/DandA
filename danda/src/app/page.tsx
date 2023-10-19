@@ -19,6 +19,7 @@ import Header from "./components/Sections/Header/Header";
 import MediaSectionReversed from "./components/Sections/MediaSection/MediaSectionReversed";
 import { useEffect, useState } from "react";
 import Preloader from "./components/Sections/MainSection/Preloader";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -41,7 +42,7 @@ export default function Home() {
           <Header />
           <MainSection />
           <InfoSection />
-          <MediaSectionReversed
+          <MediaSection
             image={media1}
             subtitle="Flowers & Plants"
             title="Sourcing flowers, plants, seeds, and organic produce has never been easier"
@@ -51,7 +52,7 @@ export default function Home() {
         access to a diverse range of botanical products, backed by convenient delivery options."
           />
           <Slider type="first" />
-          <MediaSection
+          <MediaSectionReversed
             image={media2}
             subtitle="Logistics Services"
             title="Logistics support for the seamless transportation of your floral and plant goods to your warehouse"
@@ -61,7 +62,7 @@ export default function Home() {
           />
           <LargeMediaSecton />
           <Slider type="second" />
-          <MediaSection
+          <MediaSectionReversed
             subtitle="Exotic Plants"
             title="Importation of exotic plants and fruits of any size worldwide,
         large-sized plant transportation"

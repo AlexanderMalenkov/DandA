@@ -19,7 +19,9 @@ const MediaSectionReversed = ({
     <div className={styles.dividerBlock}>
       <div className={pageStyles.center}>
         <div className={pageStyles.wrapper}>
-          <div className={classNames(styles.mediaBlockContainer, styles.reversed)}>
+          <div
+            className={classNames(styles.mediaBlockContainer, styles.reversed)}
+          >
             <div className={styles.mediaImageContainer}>
               <Image
                 src={image}
