@@ -8,12 +8,7 @@ const nextConfig = {
   images: {
     domains: ["https://d-and-a-impex.pl/"],
   },
-  //Internationalization
-  i18n: {
-    locales: ["en", "it"],
-    defaultLocale: "en",
-  },
-  output: 'export'
+  output: "export",
 };
 
 module.exports = nextConfig;
