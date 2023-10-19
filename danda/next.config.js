@@ -8,7 +8,6 @@ const nextConfig = {
   images: {
     domains: ["https://d-and-a-impex.pl/"],
   },
-  output: "export",
 };
 
 module.exports = nextConfig;

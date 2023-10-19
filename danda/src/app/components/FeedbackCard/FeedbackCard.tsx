@@ -12,7 +12,7 @@ const FeedbackCard = ({ image, name, job, title }: FeedbackCardProps) => {
       </div>
       <div className={styles.feedbackCardBrand}>
         <div className={styles.feedbackCardImage} draggable="false">
-          <Image src={image} alt="Profile photo" />
+          <img src={image.src} alt="Profile photo" />
         </div>
         <div>
           <h6 className={styles.title}>{name}</h6>

@@ -25,8 +25,8 @@ const MediaSection = ({
               animateIn="animate__fadeIn"
             >
               <div className={styles.mediaImageContainer}>
-                <Image
-                  src={image}
+                <img
+                  src={image.src}
                   alt="flowers image"
                   className={styles.mediaImage}
                 />

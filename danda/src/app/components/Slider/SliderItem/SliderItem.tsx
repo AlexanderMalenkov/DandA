@@ -17,8 +17,8 @@ const SliderItem = ({ description, width, height, image }: SliderItemProps) => {
           position: "relative",
         }}
       >
-        <Image
-          src={image}
+        <img
+          src={image.src}
           alt="image"
           style={{
             position: "absolute",
