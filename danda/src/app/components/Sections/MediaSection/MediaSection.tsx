@@ -6,6 +6,7 @@ import ContentTitle from "../../ContentTitle/ContentTitle";
 import ContentSubtitle from "../../ContentSubtitle/ContentSubtitle";
 import ContentText from "../../ContentText/ContentText";
 import { MediaSectionProps } from "./MediaSection.type";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const MediaSection = ({
   image,
@@ -19,21 +20,37 @@ const MediaSection = ({
       <div className={pageStyles.center}>
         <div className={pageStyles.wrapper}>
           <div className={styles.mediaBlockContainer}>
-            <div className={styles.mediaImageContainer}>
-              <Image
-                src={image}
-                alt="flowers image"
-                className={styles.mediaImage}
-              />
-            </div>
+            <AnimationOnScroll
+              animateOut="animate__fadeOut"
+              animateIn="animate__fadeIn"
+            >
+              <div className={styles.mediaImageContainer}>
+                <Image
+                  src={image}
+                  alt="flowers image"
+                  className={styles.mediaImage}
+                />
+              </div>
+            </AnimationOnScroll>
+
             <div className={styles.mediaTextContainer}>
               <div>
-                <ContentSubtitle text={subtitle} opacity="0.4" />
-                <ContentTitle text={title} align="left" />
+                <AnimationOnScroll
+                  animateOut="animate__fadeOut"
+                  animateIn="animate__fadeIn"
+                >
+                  <ContentSubtitle text={subtitle} opacity="0.4" />
+                  <ContentTitle text={title} align="left" />
+                </AnimationOnScroll>
               </div>
               <div className={styles.mediaText}>
-                <ContentText text={text1} />
-                <ContentText text={text2} />
+                <AnimationOnScroll
+                  animateOut="animate__fadeOut"
+                  animateIn="animate__fadeIn"
+                >
+                  <ContentText text={text1} />
+                  <ContentText text={text2} />
+                </AnimationOnScroll>
               </div>
             </div>
           </div>

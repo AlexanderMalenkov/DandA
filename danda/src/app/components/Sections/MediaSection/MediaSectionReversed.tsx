@@ -7,6 +7,7 @@ import ContentSubtitle from "../../ContentSubtitle/ContentSubtitle";
 import ContentText from "../../ContentText/ContentText";
 import { MediaSectionProps } from "./MediaSection.type";
 import classNames from "classnames";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const MediaSectionReversed = ({
   image,
@@ -22,21 +23,37 @@ const MediaSectionReversed = ({
           <div
             className={classNames(styles.mediaBlockContainer, styles.reversed)}
           >
-            <div className={styles.mediaImageContainer}>
-              <Image
-                src={image}
-                alt="flowers image"
-                className={styles.mediaImage}
-              />
-            </div>
+            <AnimationOnScroll
+              animateOut="animate__fadeOut"
+              animateIn="animate__fadeIn"
+            >
+              <div className={styles.mediaImageContainer}>
+                <Image
+                  src={image}
+                  alt="flowers image"
+                  className={styles.mediaImage}
+                />
+              </div>
+            </AnimationOnScroll>
+
             <div className={styles.mediaTextContainer}>
               <div>
-                <ContentSubtitle text={subtitle} opacity="0.4" />
-                <ContentTitle text={title} align="left" />
+                <AnimationOnScroll
+                  animateOut="animate__fadeOut"
+                  animateIn="animate__fadeIn"
+                >
+                  <ContentSubtitle text={subtitle} opacity="0.4" />
+                  <ContentTitle text={title} align="left" />
+                </AnimationOnScroll>
               </div>
               <div className={styles.mediaText}>
-                <ContentText text={text1} />
-                <ContentText text={text2} />
+                <AnimationOnScroll
+                  animateOut="animate__fadeOut"
+                  animateIn="animate__fadeIn"
+                >
+                  <ContentText text={text1} />
+                  <ContentText text={text2} />
+                </AnimationOnScroll>
               </div>
             </div>
           </div>
