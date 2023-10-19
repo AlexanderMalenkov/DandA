@@ -1,14 +1,20 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import pageStyles from "./../../../page.module.css";
 import styles from "./Header.module.css";
 import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <header>
+    <header
+      style={{
+        mixBlendMode: "revert",
+      }}
+    >
       <div
         style={{
-          position: "fixed",
+          position: "absolute",
           top: 22,
           left: 42,
         }}
@@ -18,7 +24,7 @@ const Header = () => {
 
       <div
         style={{
-          position: "fixed",
+          position: "absolute",
           top: 22,
           right: 42,
         }}

@@ -1,3 +1,4 @@
+
 .main {
   background-image: url("../../../../../public/img/flowers\ 1.png");
   background-size: cover;
@@ -10,12 +11,27 @@
   justify-content: center;
 }
 
-.scrollButton{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.scrollButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
+.preloaderText {
+  color: #fffdf6;
+
+  text-align: center;
+  text-shadow: -2px 16px 35px rgba(0, 0, 0, 0.1),
+    -9px 63px 63px rgba(0, 0, 0, 0.09), -20px 141px 86px rgba(0, 0, 0, 0.05),
+    -36px 251px 101px rgba(0, 0, 0, 0.01), -57px 392px 111px rgba(0, 0, 0, 0);
+  font-family: Playfair Display;
+  font-size: 252.808px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 379.213px */
+  letter-spacing: -18.961px;
+}
