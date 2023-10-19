@@ -50,7 +50,7 @@ export default function Home() {
             text2="Whether you're a gardening enthusiast or a business owner, we offer global 
         access to a diverse range of botanical products, backed by convenient delivery options."
           />
-          <Slider />
+          <Slider type="first" />
           <MediaSection
             image={media2}
             subtitle="Logistics Services"
@@ -60,7 +60,7 @@ export default function Home() {
             text2="This ensures that your products reach you efficiently and in top condition."
           />
           <LargeMediaSecton />
-          <Slider />
+          <Slider type="second" />
           <MediaSection
             subtitle="Exotic Plants"
             title="Importation of exotic plants and fruits of any size worldwide,

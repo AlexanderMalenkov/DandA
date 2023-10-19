@@ -8,7 +8,8 @@
 .faqItemContainer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
+  max-width: 492px;
 }
 
 .faqContainer {
@@ -34,6 +35,24 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
+}
+
+.accordionSummary {
+  color: #1e1e1e;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.accordionDetails {
+  color: #1e1e1e;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
 }
 
 @media screen and (max-width: 540px) {

@@ -18,68 +18,70 @@ const FaqSection = () => {
               </h4>
             </div>
             <div className={styles.faqItemContainer}>
-              <Accordion>
+              <Accordion className={styles.accordionSummary}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
+                  className={styles.accordionSummary}
                 >
-                  <h5>Accordion 1</h5>
+                  Quality Guarantee
                 </AccordionSummary>
-                <AccordionDetails>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                  </p>
+                <AccordionDetails className={styles.AccordionDetails}>
+                  We take great care in sourcing and delivering the freshest and
+                  highest-quality floral and organic products. If you are not
+                  satisfied with the quality of your purchase, please contact us
+                  within 14 days of receipt, and we will promptly address your
+                  concerns.
                 </AccordionDetails>
               </Accordion>
-              <Accordion>
+              <Accordion className={styles.accordionSummary}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
+                  className={styles.accordionSummary}
                 >
-                  <h5>Accordion 1</h5>
+                  Plant Health Guarantee
                 </AccordionSummary>
-                <AccordionDetails>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                  </p>
+                <AccordionDetails className={styles.AccordionDetails}>
+                  For our live plants, we guarantee their health and vitality
+                  upon arrival. If your plant arrives in poor condition or
+                  doesn't thrive within [X] days of receipt, please reach out to
+                  our customer service team, and we will provide guidance or
+                  arrange for a replacement.
                 </AccordionDetails>
               </Accordion>
-              <Accordion>
+              <Accordion className={styles.accordionSummary}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
+                  className={styles.accordionSummary}
                 >
-                  <h5>Accordion 1</h5>
+                  Delivery
                 </AccordionSummary>
-                <AccordionDetails>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                  </p>
+                <AccordionDetails className={styles.AccordionDetails}>
+                  We strive to ensure timely and safe delivery of your orders.
+                  If your products arrive damaged or do not reach you in the
+                  specified time frame, please notify us immediately, and we
+                  will work to resolve the issue promptly.
                 </AccordionDetails>
               </Accordion>
-              <Accordion>
+              <Accordion className={styles.accordionSummary}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
+                  className={styles.accordionSummary}
                 >
-                  <h5>Accordion 1</h5>
+                  Return and Refund Policy
                 </AccordionSummary>
-                <AccordionDetails>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                  </p>
+                <AccordionDetails className={styles.AccordionDetails}>
+                  If you need to return a product for any reason, please contact
+                  our customer service team. We accept returns within [X] days
+                  of delivery, and we will issue a refund or replacement, as
+                  appropriate, in accordance with our return policy.
                 </AccordionDetails>
               </Accordion>
             </div>
