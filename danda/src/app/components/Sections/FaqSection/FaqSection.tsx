@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import pageStyles from "./../../../page.module.css";
 import styles from "./FaqSection.module.css";
