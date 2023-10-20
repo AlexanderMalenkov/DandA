@@ -7,7 +7,7 @@ const SliderItem = ({ description, width, height, image }: SliderItemProps) => {
   return (
     <div
       style={{
-        marginRight: "24px",
+        // marginRight: "24px",
       }}
     >
       <div

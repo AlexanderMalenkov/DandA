@@ -43,7 +43,12 @@ const ContactSection = () => {
                     textAlign: "center",
                   }}
                 >
-                  <a className={styles.contactCardLink}>D&A-client@gmail.com</a>
+                  <a
+                    className={styles.contactCardLink}
+                    href="mailto:D&A-client@gmail.com"
+                  >
+                    D&A-client@gmail.com
+                  </a>
                 </div>
               </div>
               <div className={styles.contactCardWrapper}>
@@ -72,7 +77,12 @@ const ContactSection = () => {
                     textAlign: "center",
                   }}
                 >
-                  <a className={styles.contactCardLink}>+42 056 981 2922</a>
+                  <a
+                    className={styles.contactCardLink}
+                    href="tel:+42 056 981 2922"
+                  >
+                    +42 056 981 2922
+                  </a>
                 </div>
               </div>
               <div className={styles.contactCardWrapper}>
@@ -102,7 +112,14 @@ const ContactSection = () => {
                     textAlign: "center",
                   }}
                 >
-                  <a className={styles.contactCardLink}>
+                  <a
+                    className={styles.contactCardLink}
+                    onClick={() => {
+                      navigator.clipboard.writeText(
+                        "02-001 Warszawa, ul. Aleje Jerozolimskie, nr 85, lok. 21"
+                      );
+                    }}
+                  >
                     02-001 Warszawa, ul. Aleje Jerozolimskie, nr 85, lok. 21
                   </a>
                 </div>

@@ -10,7 +10,6 @@
   .sliderItem {
     animation: infinite-slide 4s linear infinite;
   }
-
   .swiperWrapper {
     display: flex;
     padding-bottom: 90px;
@@ -24,4 +23,5 @@
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: flex-start;
+    gap: 24px
   }

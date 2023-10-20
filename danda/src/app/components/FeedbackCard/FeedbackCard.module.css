@@ -7,6 +7,10 @@
   max-width: 890px;
 }
 
+.feedbackCardWrapper h2 {
+  font-size: 25px;
+}
+
 .feedbackCardBrand {
   display: flex;
   flex-direction: column;
@@ -66,7 +70,5 @@
 @media screen and (max-width: 540px) {
   .feedbackCardWrapper {
     max-width: 336px;
-    padding-left: 42px;
-    padding-right: 42px;
   }
 }

@@ -44,6 +44,10 @@
   width: 228px;
 }
 
+.contactCardWrapper a{
+  cursor: pointer;
+}
+
 .contactCardTitle {
   text-align: center;
   font-family: "Manrope", sans-serif;
@@ -63,6 +67,8 @@
 }
 
 .contactCardLink {
+  color: #fffdf6;
+  text-decoration: none !important;
   text-align: center;
   font-family: "Manrope", sans-serif;
   font-size: 13.333px;

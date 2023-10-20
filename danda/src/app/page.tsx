@@ -12,6 +12,7 @@ import ContactSection from "./components/Sections/ContactSection/ContactSection"
 import FaqSection from "./components/Sections/FaqSection/FaqSection";
 import Footer from "./components/Sections/Footer/Footer";
 
+import "./globals.css";
 import media1 from "./../../public/img/media1.png";
 import media2 from "./../../public/img/media2.png";
 import media3 from "./../../public/img/media3.png";
@@ -20,6 +21,7 @@ import MediaSectionReversed from "./components/Sections/MediaSection/MediaSectio
 import { useEffect, useState } from "react";
 import Preloader from "./components/Sections/MainSection/Preloader";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import SliderMobile from "./components/Slider/SliderMobile";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -27,7 +29,7 @@ export default function Home() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoaded(true);
-    }, 3000);
+    }, 2000);
 
     return () => {
       // clears timeout before running the new effect
@@ -38,7 +40,7 @@ export default function Home() {
   return (
     <RootLayout>
       {isLoaded ? (
-        <>
+        <div className="global">
           <Header />
           <MainSection />
           <InfoSection />
@@ -76,7 +78,7 @@ export default function Home() {
           <ContactSection />
           <FaqSection />
           <Footer />
-        </>
+        </div>
       ) : (
         <Preloader />
       )}
