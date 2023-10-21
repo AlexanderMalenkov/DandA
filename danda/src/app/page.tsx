@@ -54,6 +54,7 @@ export default function Home() {
         access to a diverse range of botanical products, backed by convenient delivery options."
           />
           <Slider type="first" />
+          <SliderMobile type="first" />
           <MediaSectionReversed
             image={media2}
             subtitle="Logistics Services"
@@ -64,6 +65,7 @@ export default function Home() {
           />
           <LargeMediaSecton />
           <Slider type="second" />
+          <SliderMobile type="second" />
           <MediaSectionReversed
             subtitle="Exotic Plants"
             title="Importation of exotic plants and fruits of any size worldwide,

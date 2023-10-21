@@ -23,98 +23,185 @@ SwiperCore.use([FreeMode, Loop]);
 
 const SliderMobile = ({ type }: { type: "first" | "second" }) => {
   return (
-    <Swiper
-      slidesPerView={1}
-      loop={true}
-      freeMode={true}
-      className={styles.slider}
-    >
-      <SwiperSlide
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <SliderItem
-          image={img1}
-          width="327"
-          height="327"
-          description="Potted flowers"
-        />
-      </SwiperSlide>
-      <SwiperSlide
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        //   marginRight: '80px'
-        }}
-      >
-        <SliderItem
-          image={img2}
-          width="356"
-          height="475"
-          description="Organic products"
-        />
-      </SwiperSlide>
-      <SwiperSlide
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <SliderItem
-          image={img3}
-          width="546"
-          height="360"
-          description="Seasonal Arrangements"
-        />
-      </SwiperSlide>
-      <SwiperSlide
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <SliderItem
-          image={img4}
-          width="356"
-          height="475"
-          description="Fresh Flowers"
-        />
-      </SwiperSlide>
-      <SwiperSlide
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <SliderItem
-          image={img5}
-          width="356"
-          height="327"
-          description="Floristry Services"
-        />
-      </SwiperSlide>
-      <SwiperSlide
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <SliderItem
-          image={img6}
-          width="356"
-          height="410"
-          description="Organic Delicacies"
-        />
-      </SwiperSlide>
-    </Swiper>
+    <div className={styles.slider}>
+      <Swiper slidesPerView={2} loop={true} freeMode={true}>
+        {type === "first" ? (
+          <>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img2}
+                width="156"
+                height="208"
+                description="Organic products"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img1}
+                width="156"
+                height="156"
+                description="Potted flowers"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img3}
+                width="156"
+                height="62"
+                description="Seasonal Arrangements"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img4}
+                width="156"
+                height="208"
+                description="Fresh Flowers"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img5}
+                width="156"
+                height="143"
+                description="Floristry Services"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img6}
+                width="156"
+                height="179"
+                description="Organic Delicacies"
+              />
+            </SwiperSlide>
+          </>
+        ) : (
+          <>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img8}
+                width="156"
+                height="208"
+                description="European delicacies"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img7}
+                width="156"
+                height="156"
+                description="Organic Wines"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img9}
+                width="156"
+                height="103"
+                description="Meat delicacies"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img10}
+                width="156"
+                height="208"
+                description="Coffee"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img11}
+                width="156"
+                height="156"
+                description="Sweets and candies"
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <SliderItem
+                image={img12}
+                width="156"
+                height="179"
+                description="Сhocolate delights"
+              />
+            </SwiperSlide>
+          </>
+        )}
+      </Swiper>
+    </div>
   );
 };
 

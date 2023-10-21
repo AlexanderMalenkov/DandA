@@ -5,11 +5,7 @@ import styles from "./SliderItem.module.css";
 
 const SliderItem = ({ description, width, height, image }: SliderItemProps) => {
   return (
-    <div
-      style={{
-        // marginRight: "24px",
-      }}
-    >
+    <div>
       <div
         style={{
           width: `${width}px`,
