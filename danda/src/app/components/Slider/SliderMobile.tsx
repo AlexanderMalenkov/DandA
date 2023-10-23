@@ -24,7 +24,7 @@ SwiperCore.use([FreeMode, Loop]);
 const SliderMobile = ({ type }: { type: "first" | "second" }) => {
   return (
     <div className={styles.slider}>
-      <Swiper slidesPerView={2} loop={true} freeMode={true}>
+      <Swiper slidesPerView={1.5} loop={true} freeMode={true}>
         {type === "first" ? (
           <>
             <SwiperSlide
@@ -36,8 +36,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img2}
-                width="156"
-                height="208"
+                width="240"
+                height="320"
                 description="Organic products"
               />
             </SwiperSlide>
@@ -50,8 +50,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img1}
-                width="156"
-                height="156"
+                width="240"
+                height="240"
                 description="Potted flowers"
               />
             </SwiperSlide>
@@ -64,8 +64,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img3}
-                width="156"
-                height="62"
+                width="240"
+                height="158"
                 description="Seasonal Arrangements"
               />
             </SwiperSlide>
@@ -78,8 +78,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img4}
-                width="156"
-                height="208"
+                width="240"
+                height="320"
                 description="Fresh Flowers"
               />
             </SwiperSlide>
@@ -92,8 +92,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img5}
-                width="156"
-                height="143"
+                width="240"
+                height="220"
                 description="Floristry Services"
               />
             </SwiperSlide>
@@ -106,8 +106,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img6}
-                width="156"
-                height="179"
+                width="240"
+                height="275"
                 description="Organic Delicacies"
               />
             </SwiperSlide>
@@ -123,8 +123,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img8}
-                width="156"
-                height="208"
+                width="240"
+                height="320"
                 description="European delicacies"
               />
             </SwiperSlide>
@@ -137,8 +137,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img7}
-                width="156"
-                height="156"
+                width="240"
+                height="240"
                 description="Organic Wines"
               />
             </SwiperSlide>
@@ -151,8 +151,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img9}
-                width="156"
-                height="103"
+                width="240"
+                height="158"
                 description="Meat delicacies"
               />
             </SwiperSlide>
@@ -165,8 +165,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img10}
-                width="156"
-                height="208"
+                width="240"
+                height="320"
                 description="Coffee"
               />
             </SwiperSlide>
@@ -179,8 +179,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img11}
-                width="156"
-                height="156"
+                width="240"
+                height="240"
                 description="Sweets and candies"
               />
             </SwiperSlide>
@@ -193,8 +193,8 @@ const SliderMobile = ({ type }: { type: "first" | "second" }) => {
             >
               <SliderItem
                 image={img12}
-                width="156"
-                height="179"
+                width="240"
+                height="275"
                 description="Сhocolate delights"
               />
             </SwiperSlide>
