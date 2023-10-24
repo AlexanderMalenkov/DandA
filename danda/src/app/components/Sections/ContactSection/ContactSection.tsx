@@ -4,7 +4,7 @@ import pageStyles from "./../../../page.module.css";
 
 const ContactSection = () => {
   return (
-    <div className={styles.contactBackround}>
+    <div className={styles.contactBackround} id="contacts">
       <div className={pageStyles.center}>
         <div className={pageStyles.wrapper}>
           <div className={styles.contactWrapper}>

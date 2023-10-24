@@ -29,7 +29,9 @@ const Header = () => {
           right: 42,
         }}
       >
-        <p className={styles.headerText}>Contact us</p>
+        <a href="#contacts" className={styles.headerText}>
+          Contact us
+        </a>
       </div>
     </header>
   );

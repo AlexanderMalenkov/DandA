@@ -8,6 +8,7 @@
 }
 
 .headerText {
+  text-decoration: none;
   color: #fff;
   font-family: "Manrope", sans-serif;
   text-align: right;
