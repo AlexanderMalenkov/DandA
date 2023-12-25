@@ -26,9 +26,9 @@ const Footer = () => {
                   </div>
                   <div>
                     <h5 className={styles.footerTitle}>Contact:</h5>
-                    <h6 className={styles.footerSubtitle}>+42 056 981 2922</h6>
+                    <h6 className={styles.footerSubtitle}>+37126183329</h6>
                     <h6 className={styles.footerSubtitle}>
-                      D&A-client@gmail.com
+                       d.and.a.impex1@gmail.com
                     </h6>
                   </div>
                 </div>
