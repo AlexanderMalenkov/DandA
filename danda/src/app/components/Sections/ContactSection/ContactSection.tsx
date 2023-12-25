@@ -45,9 +45,9 @@ const ContactSection = () => {
                 >
                   <a
                     className={styles.contactCardLink}
-                    href="mailto:D&A-client@gmail.com"
+                    href="mailto:d.and.a.impex1@gmail.com"
                   >
-                    D&A-client@gmail.com
+                    d.and.a.impex1@gmail.com
                   </a>
                 </div>
               </div>
@@ -79,9 +79,9 @@ const ContactSection = () => {
                 >
                   <a
                     className={styles.contactCardLink}
-                    href="tel:+42 056 981 2922"
+                    href="tel:+37126183329"
                   >
-                    +42 056 981 2922
+                    +37126183329
                   </a>
                 </div>
               </div>
